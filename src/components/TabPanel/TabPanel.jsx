@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPencilAlt } from "react-icons/fa";
 import './TabPanel.css'
 const TabPanel = () => {
     return (
@@ -43,11 +44,13 @@ const TabPanel = () => {
                 </div>
                 <div>
                     <button class="border border-0 rounded bg-secondary-subtle px-3 py-2"> Filter: All  <i
-                        class="fa-solid fa-caret-down ms-2"></i></button>
+                        class="fa-solid fa-caret-down ms-2"></i></button> 
+                    <button class="btn d-block d-md-none fixed-bottom fixed-right p-3 w-25 rounded-circle shadow" id="mobileEditButton"><FaPencilAlt/></button>
                 </div>
 
             </div>
             {/* Tablet and Mobile View End */}
+           
         </>
     );
 };

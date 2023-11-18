@@ -12,7 +12,7 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <a className="navbar-brand ms-3">
-                        <img src={logo} />
+                        <img src={logo} height='15'/>
                     </a>
                     <form className="d-flex mx-lg-auto search-box rounded-pill" role="search" style={{color:'#5C5C5C'}}>
 
