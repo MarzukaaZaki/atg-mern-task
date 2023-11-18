@@ -1,0 +1,12 @@
+.search-input{
+    width: 400px;
+    background-color: #F2F2F2;
+    text-align: center;
+  
+}
+
+.search-icon{
+    position: absolute;
+    top:40%;
+    left: 35%;
+}
