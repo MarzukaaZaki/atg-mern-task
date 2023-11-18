@@ -1,0 +1,10 @@
+.posts-tab-container {
+    max-width: 1080px;
+
+}
+
+.posts-tab-container .nav-link {
+    color: #8A8A8A;
+    padding: 10px 10px 20px 0;
+    margin-bottom: -17px;
+}
