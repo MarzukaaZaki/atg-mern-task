@@ -1,0 +1,39 @@
+.banner-container {
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.banner-container img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    opacity: 0.4;
+
+}
+
+.banner-text {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.btn-go-back, .btn-join-group{
+    position: absolute;
+}
+.btn-go-back {
+    top: 10%;
+    left: 5%;
+}
+
+.btn-join-group {
+    top: 10%;
+    right: 5%;
+}
+
+@media (max-width: 768px) {
+    .banner-text {
+        left: 5%
+    }
+}
