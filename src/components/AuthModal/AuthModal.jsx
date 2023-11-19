@@ -25,6 +25,8 @@ const AuthModal = () => {
         <div>
             <Button className='btn-light' aria-current="page" href="#">Create Account.<span className="text-primary fw-semibold" onClick={handleShowModal1}> It's free</span><FaCaretDown/>
             </Button>
+<div className='mx-10'>
+
 
             <Modal size="lg" show={showModal1} onHide={handleCloseModal1} className='modal'>
                 <p class="d-none d-md-block text-success fw-semibold bg-success-subtle rounded px-5 py-3">Let's
@@ -127,19 +129,97 @@ const AuthModal = () => {
             
             </Modal>
 
-            <Modal show={showModal2} onHide={handleCloseModal2}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal 2</Modal.Title>
+            <Modal size='lg' show={showModal2} onHide={handleCloseModal2}>
+            <p class="d-none d-md-block text-success fw-semibold bg-success-subtle rounded px-5 py-3">Let's
+                    learn, share & inspire
+                    each other with our passion for computer engineering. Sign up now 🤘🏼
+                </p>
+                <Modal.Header>
+                <div class="d-block d-md-flex justify-content-between w-100">
+                        <div>
+                        <h3 class="fw-bold d-none d-md-inline">Sign In</h3>
+                            <h3 class="fw-bold d-block d-md-none">Welcome Back !</h3>
+                        </div>
+
+
+                        <div>
+                            <button className="d-none d-md-inline btn btn-sm border border-0 bg-light-subtle small"
+                                data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" onClick={handleShowModal2}> Don't have an
+                                account yet? <span className="text-primary fw-semibold">Create new for free</span></button>
+
+                        </div>
+                        <button type="button" class="d-none d-md-block btn-close btn-close-custom"
+                            data-bs-dismiss="modal" aria-label="Close" onClick={handleCloseModal1}></button>
+                        <button type="button" class="d-block d-md-none btn-close rounded-circle "
+                            style={{ color: 'white', backgroundColor: 'gray', marginTop:'-35px' }} data-bs-dismiss="modal"
+                            aria-label="Close" onClick={handleCloseModal2}></button>
+                            
+                    </div>
+                            
                 </Modal.Header>
+                
                 <Modal.Body>
-                    <p>This is the content of Modal 2.</p>
+                <Row sm={1} lg={2}>
+                        <Col>
+                          
+                            <FormControl
+                                type='email'
+                                placeholder='Email'
+                                className='modal-input border border-1'
+                            />
+                            <FormControl
+                                type='password'
+                                placeholder='Password'
+                                className='modal-input border border-1'
+                            />
+                            
+                            <button className="d-none d-md-block py-2 btn btn-primary rounded-pill w-100 mt-1 mb-3"> Sign In</button>
+
+                            <div className="d-flex d-md-block justify-content-between w-100">
+                                <button className="d-md-none btn btn-primary rounded-pill w-lg-100 my-3 py-2"> Sign In</button>
+                                <button
+                                    className="d-md-inline d-md-none btn btn-sm border border-0 text-decoration-underline bg-light-subtle small"
+                                    data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" onClick={handleShowModal2}><span> or, Sign
+                                        in</span>
+                                </button>
+
+
+                            </div>
+                            <div class="border border-1 rounded py-1 px-2 mb-2">
+            
+                                                <img src={facebookIcon}
+                                                    style={{width: "20px", height: "20px", textAlign:'center'}}/>
+                                                <button class="btn btn-light border border-0">
+                                                    Sign Up with Facebook
+                                                </button>
+            
+                                            </div>
+                                            <div class="border border-1 rounded py-1 px-2 mb-2">
+            
+                                                <img src={googleIcon}
+                                                    style={{width: "20px", height: "20px"}}/>
+                                                <button class="btn btn-light border border-0">
+                                                    Sign Up with Google
+                                                </button>
+            
+                                            </div>
+                                            <div className='text-center'>
+                                              <small class="text-secondary fw-bold"> Forgot Password?</small>
+  
+                                            </div>
+                                            
+                        </Col>
+                        <Col className=' d-none d-lg-block'>
+                        
+                        <img src={atgPic} alt=""/>
+            
+                                            
+                        </Col>
+                    </Row>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseModal2}>
-                        Close
-                    </Button>
-                </Modal.Footer>
+            
             </Modal>
+            </div>
         </div >
     );
 };

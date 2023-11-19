@@ -20,18 +20,8 @@
 }
 @media (max-width:560px) {
     .modal {
-        top: 15%;
+        top: 25%;
     }
-
-    .modal-dialog.modal-dialog-centered {
-        margin: 0;
-        position: absolute;
-        bottom: 5%;
-        left: 0;
-        right: 0;
-        top: auto;
-    }
-
     .btn-close-custom {
         opacity: 1;
     }
