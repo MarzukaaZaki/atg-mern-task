@@ -1,0 +1,45 @@
+.btn-close-custom {
+
+    position: absolute;
+    padding: 32px;
+    top: -20px;
+    /* Adjust this value for the desired height above the modal box */
+    right: -0.1px;
+    /*Adjust this value for the desired distance from the right edge */
+    font-size: 8px;
+    /* Adjust this value to control the size of the close button */
+    width: 6px;
+    /* Adjust this value for the desired width of the close button */
+    height: 6px;
+    /* Adjust this value for the desired height of the close button */
+    line-height: 1.6rem;
+    /* Center the close button icon */
+    border-radius: 50%;
+    /* Make it circular */
+    background-color: #FFFFFF
+}
+@media (max-width:560px) {
+    .modal {
+        top: 15%;
+    }
+
+    .modal-dialog.modal-dialog-centered {
+        margin: 0;
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        top: auto;
+    }
+
+    .btn-close-custom {
+        opacity: 1;
+    }
+}
+
+.modal-input{
+    padding: 12px;
+    border-radius: 2px 2px 0px 0px;
+    border: 1px solid #D9D9DB;
+    background-color: #F7F8FA;
+}
