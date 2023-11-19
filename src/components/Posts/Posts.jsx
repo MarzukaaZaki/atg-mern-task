@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { IoMdShare } from "react-icons/io";
-import { IoEyeOutline } from "react-icons/io5";
+import { IoEyeOutline, IoInformationCircleOutline, IoClose } from "react-icons/io5";
 import { FaRegCalendar } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
 import { BsThreeDots } from "react-icons/bs";
+import { AiOutlineLike } from "react-icons/ai";
+import { GoLocation } from "react-icons/go";
 import './Posts.css'
 import post1Img from '../../assets/blogposts-images/post1.jpeg'
 import post2Img from '../../assets/blogposts-images/post2.jpeg'
@@ -16,6 +18,10 @@ import user1Img from '../../assets/user-images/user1.jpeg'
 import user2Img from '../../assets/user-images/user2.png'
 import user3Img from '../../assets/user-images/user3.png'
 import user4Img from '../../assets/user-images/user4.png'
+import user5Img from '../../assets/user-images/user5.png'
+import user6Img from '../../assets/user-images/user6.png'
+import user7Img from '../../assets/user-images/user7.png'
+import user8Img from '../../assets/user-images/user8.png'
 const Posts = () => {
     const [open, setOpen] = useState(false);
     const handleDropdownToggle= () => {
@@ -292,10 +298,108 @@ const Posts = () => {
 
                         </div>
                     </div>
+                    
                     {/* 4th Card */}
+
+            </div>
+            <div class="col-12 col-md-4 d-none d-md-block">
+                    <div class="border border-0 w-75 border-bottom border-secondary-subtle mx-5 py-2">
+                        <GoLocation/>
+                        <input type="text" class="border w-75 border-0"/>
+                        <IoClose/>
+                    </div>
+
+                    <div class="container">
+                        <div class="d-flex mt-3 ms-4">
+                            <AiOutlineLike className='me-2'/>
+                            <small class="text-uppercase text-dark fw-semibold"> Recommended Groups</small>
+
+                        </div>
+                        <div class="mt-3 ms-4">
+                            <IoInformationCircleOutline/>
+                            <span> <small class="text-body-secondary p-2">Your location will help us serve better and extend a personalised experience. </small></span>
+                        </div>
+                        <div class="my-3">
+                            <div class="d-flex justify-content-evenly">
+
+                                <div class="d-flex">
+                                    <img src={user5Img} class="me-2 rounded-circle"
+                                        style={{width: "40px"}}/>
+                                    <small class="mt-2 me-5">Leisure </small>
+
+                                </div>
+                                <div >
+                                    <button class="btn btn-sm bg-secondary-subtle px-3 py-2 rounded-pill border border-0">Follow</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="my-3">
+                            <div class="d-flex justify-content-evenly">
+
+                                <div class="d-flex">
+                                    <img src={user6Img} class="me-2 rounded-circle"
+                                        style={{width: "40px"}}/>
+                                    <small class="mt-2 me-5">Activism </small>
+
+                                </div>
+                                <div >
+                                    <button class="btn btn-sm bg-secondary-subtle px-3 py-2 rounded-pill border border-0">Follow</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="my-3">
+                            <div class="d-flex justify-content-evenly">
+
+                                <div class="d-flex">
+                                    <img src={user7Img} class="rounded-circle"
+                                        style={{width: "40px"}}/>
+                                    <small class="mt-2 ms-2 me-5">MBA</small>
+
+                                </div>
+                                <div >
+                                    <button class="btn btn-sm bg-secondary-subtle px-3 py-2 rounded-pill border border-0 ms-4">Follow</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="my-3 ms-1">
+                            <div class="d-flex justify-content-evenly ms-2">
+
+                                <div class="d-flex">
+                                    <img src={user8Img} class="me-1 rounded-circle"
+                                        style={{width: "40px"}}/>
+                                    <small class="mt-2 me-5">Philosophy</small>
+
+                                </div>
+                                <div >
+                                    <button class="btn btn-sm bg-secondary-subtle px-3 py-2 rounded-pill border border-0">Follow</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <p class="text-end text-primary"> See More...</p>
+                        
+
+
+                    </div>
+
+
+                </div>
+
                 </div>
             </div>
-        </div>
+       
     );
 };
 
