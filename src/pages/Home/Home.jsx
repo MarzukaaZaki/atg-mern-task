@@ -12,9 +12,7 @@ const Home = () => {
            <Banner/>
            <TabPanel/>
            <Posts/>
-           <AuthModal/>
-            This is tab panel and buttons.
-            This is main content posts in the middle & groups on the side.
+
             
         </div>
     );

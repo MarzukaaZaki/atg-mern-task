@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button, Col, FormControl, InputGroup, Modal, Row } from 'react-bootstrap';
 import './AuthModal.css'
+import { FaCaretDown } from "react-icons/fa";
 import facebookIcon from '../../assets/icons-images/icons8-facebook-48.png'
 import googleIcon from '../../assets/icons-images/icons8-google-48.png'
 import atgPic from '../../assets/illustration-images/atg_illustration.png'
@@ -22,8 +23,7 @@ const AuthModal = () => {
 
     return (
         <div>
-            <Button variant="primary" onClick={handleShowModal1}>
-                Open Modal 1
+            <Button className='btn-light' aria-current="page" href="#">Create Account.<span className="text-primary fw-semibold" onClick={handleShowModal1}> It's free</span><FaCaretDown/>
             </Button>
 
             <Modal size="lg" show={showModal1} onHide={handleCloseModal1} className='modal'>

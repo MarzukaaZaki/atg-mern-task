@@ -3,6 +3,7 @@ import logo from '../../../src/assets/logo/logo.png'
 import { FaCaretDown } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
 import './Header.css'
+import AuthModal from '../AuthModal/AuthModal';
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -23,7 +24,7 @@ const Header = () => {
                     </form>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Create Account.<span className="text-primary fw-semibold"> It's free</span><FaCaretDown/></a>
+                            <AuthModal/>
                         </li>
                         
                     </ul>
