@@ -8,5 +8,27 @@
 .search-icon{
     position: absolute;
     top:40%;
-    left: 33%;
+    
+}
+
+.nav-dropdown {
+    background-color: #fff;
+    box-shadow: inset;
+    
+    
+}
+
+.nav-dropdown-menu{
+    margin-right: auto; 
+    margin-top: 5%;
+    z-index: 2;
+}
+
+.nav-dropdown-menu input{
+   
+    width: 100%;
+}
+.nav-dropdown-menu ul{
+    list-style: none;
+    
 }
